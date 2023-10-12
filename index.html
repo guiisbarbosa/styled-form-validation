@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/var.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/all.min.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <main class="container">
+        <div class="text-content">
+            <h1>FORMULÁRIO</h1>
+        </div>
+
+        <div class="form">
+            <form id="form">
+                <input type="text" name="name" class="form-field" placeholder="Nome completo *">
+                <span class="mandatory-hidden">campo obrigatório</span>
+                <input type="email" name="email" class="form-field" placeholder="Email *">
+                <span class="mandatory-hidden">campo obrigatório</span>
+                <input type="tel" name="telephone" class="form-field" placeholder="Telefone *">
+                <span class="mandatory-hidden">campo obrigatório</span>
+                <textarea name="message" class="form-field textarea" placeholder="Mensagem *"></textarea>
+                <span class="mandatory-hidden">campo obrigatório</span>
+                <p class="information">*campos obrigatórios</p>
+                <div class="buttons">
+                    <button type="button" class="erase" id="erase" onclick="limparFormulario()"><i class="fa-solid fa-trash-can"></i></button>
+                    <button type="submit" class="send-button" id="send-button"><i class="fa-regular fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Tilt+Neon&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--verdigris);
+    gap: 10px;
+}
+
+.container .text-content {
+    width: 50px;
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .text-content h1 {
+    transform: rotate(270deg);
+    letter-spacing: 10px;
+    font-family: 'Tilt Neon', sans-serif;
+    color: var(--jonquil);
+}
+
+.container .form {
+    width: 340px;
+    height: 340px;
+    background-color: var(--raisin-black);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: relative;
+    border-radius: 15px;
+}
+
+.container .form form {
+    display: flex;
+    flex-direction: column;
+}
+
+::placeholder {
+    color: #dadada;
+    font-size: 15px;
+}
+
+.container .form form .form-field {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 9px;
+    font-weight: 700;
+    margin-bottom: 0;
+    outline: none;
+}
+
+.container .form form .textarea {
+    min-width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.container .form form textarea::placeholder {
+    font-size: 17px;
+}
+
+.container .form .mandatory-hidden {
+    font-size: 8px;
+    color: var(--flame);
+    margin-bottom: 6px;
+    margin-left: 5px;
+    opacity: 0;
+}
+
+.container .form .information {
+    margin-bottom: 11px;
+    color: var(--jonquil)
+}
+
+.container .form form .mandatory-hidden.visible {
+    opacity: 1;
+}
+
+.container .form form .form-field.needed {
+    border: 2px solid var(--flame);
+}
+
+.container .form form .form-field.ready {
+    border: 2px solid var(--kelly-green);
+}
+
+.buttons {
+    display: flex;
+    position: relative;
+    transform: translateY(20px);
+}
+
+.container .form .buttons .send-button {
+    width: 90px;
+    height: 90px;
+    background-color: var(--kelly-green);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--dark-kelly-green);
+    font-size: 30px;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 20px;
+    border: 5px solid var(--verdigris);
+}
+
+.container .form .buttons .send-button:hover {
+    background-color: var(--dark-kelly-green);
+    color: var(--hard-dark-kelly-green);
+}
+
+.container .form .buttons .send-button::after {
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: transparent;
+    z-index: 999;
+    top: 23px;
+    right: -23px;
+    border-bottom-left-radius: 10px;
+    box-shadow: -3px 3px var(--verdigris);
+}
+
+.container .form .buttons .send-button::before {
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: transparent;
+    z-index: 999;
+    top: 23px;
+    left: -23px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 3px var(--verdigris);
+}
+
+.container .form .buttons .erase {
+    width: 50px;
+    height: 50px;
+    background-color: var(--flame);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--dark-flame);
+    font-size: 22px;
+    transform: translateY(-52%);
+    position: absolute;
+    right: 150px;
+    border: 5px solid var(--verdigris);
+}
+
+.container .form .buttons .erase:hover{
+    background-color: var(--dark-flame);
+    color: var(--hard-dark-flame)
+}
+
+.container .form .buttons .erase::after {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:var(--raisin-black);
+    z-index: 999;
+    top: 12px;
+    right: -14px;
+    border-bottom-left-radius: 5px;
+    box-shadow: -2px 2px var(--verdigris);
+}
+
+.container .form .buttons .erase::before {
+    content: ' ';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--raisin-black);
+    z-index: 999;
+    top: 12px;
+    left: -14px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 2px 2px var(--verdigris);
+}
