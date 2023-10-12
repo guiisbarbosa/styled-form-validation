@@ -34,6 +34,7 @@ btnSend.addEventListener('click', (event) => {
     });
 });
 
+
 btnErase.addEventListener('click', () => {
     const elementosDoFormulario = form.elements;
 
@@ -41,5 +42,9 @@ btnErase.addEventListener('click', () => {
         if (elementosDoFormulario[i].type !== "button") {
             elementosDoFormulario[i].value = "";
         }
+
+        inputs[i].classList.remove('needed')
+        inputs[i].classList.remove('ready')
+        mandatory[i].classList.remove('visible')
     }
 })
